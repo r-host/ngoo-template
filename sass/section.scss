@@ -15,11 +15,6 @@
 	background-color: rgba($font__body-color, .5);
 }*/
 /* 6.1 - About */
-.banner-page.about{
-	background: url('../images/banner-page.jpg') bottom center no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
 
 .image-with-title{
 	position: relative;
@@ -263,14 +258,7 @@ dl.hiw{
     box-shadow: 0 0 0 0 rgba($white, 0); } }
 
 /* 6.2 - Services */
-.banner-page.project{
-	background: url('../images/bgoverlay-1.jpg') bottom center no-repeat;
-}
-.bg-dark{
-	background: url('../images/bgoverlay-1.jpg') bottom center no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
+
 .bg-dark:before{
 	content: '';
 	position: absolute;
@@ -330,7 +318,6 @@ dl.hiw{
 	.bg-appointment{
 		@include border-radius(20px 0 0 20px);
 		height: 100%;
-		background: url('../images/appoinment-img-1.jpg') bottom center no-repeat;
 	    background-size: cover;
 	}
 	.wrap-form{
@@ -462,7 +449,6 @@ dl.hiw{
 			img{
 				width: 60px;
 				height: 60px;
-				@include border-radius(20px);
 			}
 		}
 		.media-body{
@@ -699,52 +685,6 @@ dl.hiw{
   }
 
 }
-.bg-overlay-1{
-    background: url(../images/bgoverlay-2.jpg) bottom center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-      &:before{
-	    content: '';
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    background-color: $color_2;
-	    opacity: .9;
-    }
-}
-.bg-overlay-2{
-    background: url(../images/bgoverlay-2.jpg) bottom center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-      &:before{
-	    content: '';
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    background-color: rgba($color_1, .05);
-	    /*opacity: .9;*/
-    }
-}
-.bg-overlay-3{
-    background: url(../images/bgoverlay-3.jpg) bottom center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-      &:before{
-	    content: '';
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    background-color: $color_1;
-	    opacity: .6;
-    }
-}
-
 .pd30{
 	padding: 30px 0;
 }
