@@ -143,14 +143,64 @@
     position: relative;
   }
   
-  
+  .navbar{
+        padding: 0;
+  }
 
   ol, li{
   	margin: 0 0;
 	  font-size: 14px;
 	  font-weight: 700;
   }
-  .nav > li > a {
+  ul{
+    margin-left: 0;
+  }
+  .nav-link{
+
+  }
+/*.navbar-nav{
+  .nav-link {
+    color: $white;
+
+    &:hover, &:focus{
+      color: $color_1;
+    }
+  } 
+}*/
+  .navbar-toggler{
+    color: $color_1;
+    border-color: transparent;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 112, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .dropdown-toggle{
+    &::after{
+      margin-left: 0.6em;
+      color: $color_1;
+    }
+  }
+  .dropdown-menu {
+    min-width: 200px;
+    @include border-radius(0);
+    padding: 0.2rem 0;
+    margin-top: 0;
+    border-width: 0;
+    background-color: #333333;
+    color: $white;
+    font-size: 14px;
+  }
+  .dropdown-item{
+    color: $white;
+    padding: 0.5rem 1.5rem;
+    &:hover, &:focus{
+      
+      text-decoration: none;
+      background-color: #222222;
+    }
+  }
+ /* .nav > li > a {
 	 color: $font__navbar-color;
   }
   .nav > li.active > a,
@@ -183,15 +233,12 @@
   	font-size: 18px;
   }
   .dropdown-menu{
-    //background-color: $white;
     min-width: 180px;
     color: $color_2;
     padding: 0;
     border: 0;
     border-radius: 0;
     > li{
-    	//text-transform: uppercase;
-    	/*border-bottom: 1px solid lighten($color_1, 10%);*/
     	a{
     		padding: 10px 20px;
 		    color: $color_2;
@@ -202,7 +249,7 @@
 		    }
     	}
     }
-  }
+  }*/
 }
 /*end navbarmain*/
 
@@ -216,8 +263,17 @@
 
     .navbar-brand{
       position: absolute;
-      left: 40px;
+      /*left: 40px;*/
       top: -75px;
+    }
+    .navbar-nav{
+      .nav-link {
+        color: $white;
+
+        &:hover, &:focus{
+          color: $color_1;
+        }
+      } 
     }
     &.stiky {
       height: auto;
@@ -240,9 +296,7 @@
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both; 
       bottom: initial;
-      .nav > li > a {
-       color: $color_2;
-      }
+      
       .navbar-brand{
         position: static;
         margin-left: 0;
@@ -258,7 +312,14 @@
         padding-left: 0;
             margin-top: 0;
       }
-      .navbar-nav > li > a {
+      .nav-link {
+        color: $font__navbar-stiky-color;
+
+        &:hover, &:focus{
+          color: $color_1;
+        }
+      } 
+      /*.navbar-nav > li > a {
         padding-left: 10px;
         padding-right: 10px;
       }
@@ -268,7 +329,7 @@
       } 
       .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
         color: $color_1;
-      }
+      }*/
     }
   }
 
@@ -344,6 +405,12 @@
   }
 }
 
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media (min-width: 768px){
   .navbar-nav > li > a {
       padding-top: 15px;

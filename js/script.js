@@ -35,7 +35,7 @@ $(document).ready(function(){
 	
 	if ( top > batas ) {
 		navbar.addClass('stiky');
-		navbarnav.addClass('navbar-right');
+		navbarnav.addClass('ml-auto');
 	}
 	jQuery(window).scroll(function () {
 		top = jQuery(document).scrollTop();
@@ -43,11 +43,11 @@ $(document).ready(function(){
 		
 		if ( top > batas ) {
 			navbar.addClass('stiky');
-			navbarnav.addClass('navbar-right');
+			navbarnav.addClass('ml-auto');
 		}else {
 			navbar.removeClass('stiky'); 
 			if(header.hasClass('header-1')){
-				navbarnav.removeClass('navbar-right');
+				navbarnav.removeClass('ml-auto');
 			}
 		}
 		
