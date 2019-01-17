@@ -80,6 +80,12 @@
  		display: none;
 	}
 	.header-1 {
+
+		.navbar-main{ 
+			.navbar-brand{
+		      position: relative;
+		    }
+	    }
 		
 		.navbar-nav > {
 		    float: none;
@@ -98,14 +104,11 @@
 			}
 		}
 
-		.navbar-main{ 
+		/*.navbar-main{ 
 		    bottom: 0;
 			.navbar-brand{
 				position: absolute;
 	    		left: 0;
-				/*> img{
-					width: 60%
-				}*/
 			}
 			.dropdown-menu > li a{
 				color: $black_3;
@@ -116,11 +119,11 @@
 					position: absolute;
 				}
 			}
-		}
+		}*/
 
 	}
 
-	.header-2, .header-3{
+	/*.header-2, .header-3{
 		.navbar-main{ 
 			.navbar-brand{
 			    position: absolute;
@@ -134,7 +137,7 @@
 				}
 			}
 		}
-	}
+	}*/
 
 	/* END HEADER */
 

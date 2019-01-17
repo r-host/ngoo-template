@@ -44,75 +44,75 @@
 }
 
 .middlebar{
-	padding: 0 0;
-	height: 90px;
+  padding: 0 0;
+  height: 90px;
 
-	.topbar-left{
-		.welcome-text{
-			font-style: italic;
-			color: $white;
-		    padding: 8px 0;
-		}
-	}
-	.topbar-right{
-		text-align: right;
-		.topbar-menu{
-			display: inline-table;
-			margin-bottom: 0;
-			vertical-align: top;
-			li{
-				list-style: none;
-				float: left;
-				color: $white;
-				padding: 0 10px;
-				font-size: 12px;
-				a{
-					color: $font__topbar-nav-color;
-					&:hover{
-						color: $font__topbar-nav-hover-color;
-					}
-				}
-			}
-		}
-		.topbar-sosmed{
-			display: inline-table;
-			margin-bottom: 0;
-			li{
-				list-style: none;
-				float: left;
-				font-size: 16px;
-				padding: 0 10px;
-				a{
-					color: $font__topbar-nav-color;
-					&:hover{
-						color: $font__topbar-nav-hover-color;
-					}
-				}
-			}
-		}
-	}
-	&:after{
-		@extend .cfix;
-	}
+  .topbar-left{
+    .welcome-text{
+      font-style: italic;
+      color: $white;
+        padding: 8px 0;
+    }
+  }
+  .topbar-right{
+    text-align: right;
+    .topbar-menu{
+      display: inline-table;
+      margin-bottom: 0;
+      vertical-align: top;
+      li{
+        list-style: none;
+        float: left;
+        color: $white;
+        padding: 0 10px;
+        font-size: 12px;
+        a{
+          color: $font__topbar-nav-color;
+          &:hover{
+            color: $font__topbar-nav-hover-color;
+          }
+        }
+      }
+    }
+    .topbar-sosmed{
+      display: inline-table;
+      margin-bottom: 0;
+      li{
+        list-style: none;
+        float: left;
+        font-size: 16px;
+        padding: 0 10px;
+        a{
+          color: $font__topbar-nav-color;
+          &:hover{
+            color: $font__topbar-nav-hover-color;
+          }
+        }
+      }
+    }
+  }
+  &:after{
+    @extend .cfix;
+  }
 }
 
 .topbar-logo{
-	background-color: $white;
+  background-color: $white;
     padding: 5px 0;
-	
+  
 }
 
 .contact-info{
-	float: right;
+  float: right;
   margin-top: 5px;
-	> div{
-		display: inline-block;
-		margin-right: 40px;
+  > div{
+    display: inline-block;
+    margin-right: 40px;
     margin-top: 6px;
     &:last-child{
       margin-right: 0;
     }
-	}
+  }
 }
 
 .box-act{
@@ -125,48 +125,37 @@
      background: $color_1;
 }
 .navbar-toggle{
-	float: left;
+  float: left;
 }
 
 /* 4.2 - NAVBAR */
 
-
+.navbar-brand{
+  padding: 0 0;
+}
 .navbar-main {
-  border-radius: 0;
+  /*border-radius: 0;
   margin-bottom: 0;
   border: 0;
   position: relative;
-  z-index: 3;
+  z-index: 3;*/
    -webkit-transition: padding .2s ease-in-out;
   transition: padding .2s ease-in-out;
-  > .container{
-    position: relative;
-  }
+  
   
   .navbar{
         padding: 0;
   }
 
   ol, li{
-  	margin: 0 0;
-	  font-size: 14px;
-	  font-weight: 700;
+    margin: 0 0;
+    font-size: 14px;
+    font-weight: 700;
   }
   ul{
     margin-left: 0;
   }
-  .nav-link{
 
-  }
-/*.navbar-nav{
-  .nav-link {
-    color: $white;
-
-    &:hover, &:focus{
-      color: $color_1;
-    }
-  } 
-}*/
   .navbar-toggler{
     color: $color_1;
     border-color: transparent;
@@ -200,56 +189,7 @@
       background-color: #222222;
     }
   }
- /* .nav > li > a {
-	 color: $font__navbar-color;
-  }
-  .nav > li.active > a,
-  .nav > li > a:hover,
-  .nav > li > a:focus {
-    color: $font__navbar-active-color;
-    background-color: transparent;
-  }  
-  &.stiky {
-    .nav > li.active > a,
-    .nav > li > a:hover,
-    .nav > li > a:focus {
-      color: $font__navbar-active-color;
-      background-color: transparent;
-    } 
-  }
-  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: transparent;
-    border-color: transparent;
-    color: $font__navbar-hover-color;
-  }
-  .caret {
-    margin-left: 10px;
-    border-top-color: $color_1;
-  }
-  .nav.navbar-right > li{
-      margin-right: 15px;
-  }
-  .fa{
-  	font-size: 18px;
-  }
-  .dropdown-menu{
-    min-width: 180px;
-    color: $color_2;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    > li{
-    	a{
-    		padding: 10px 20px;
-		    color: $color_2;
-            background-color: $white;
-        &:hover{
-	    	    background-color: $color_1;
-	    	    color: $white;
-		    }
-    	}
-    }
-  }*/
+ 
 }
 /*end navbarmain*/
 
@@ -305,13 +245,7 @@
         margin-bottom: 0;
         padding: 10px 15px;
       }
-      .navbar-nav{
-        background-color: $white;
-        clear: none;
-        float: left;
-        padding-left: 0;
-            margin-top: 0;
-      }
+      
       .nav-link {
         color: $font__navbar-stiky-color;
 
@@ -319,17 +253,7 @@
           color: $color_1;
         }
       } 
-      /*.navbar-nav > li > a {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-
-      .nav > li.active > a{
-        color: $font__topbar-nav-hover-color;
-      } 
-      .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-        color: $color_1;
-      }*/
+      
     }
   }
 
@@ -344,13 +268,19 @@
   }
   .navbar-main{
     background-color: #fff;
-
+    .container{
+      padding: 20px 15px;
+    }
     .navbar-brand{
-      margin-left: 15px;
+      /*margin-left: 15px;*/
     }
-    .navbar-right{
-      margin-right: 15px;
-    }
+    .nav-link {
+      color: $font__navbar-stiky-color;
+
+      &:hover, &:focus{
+        color: $color_1;
+      }
+    } 
     &.stiky {
       height: auto;
       background-color: $white;
@@ -383,13 +313,7 @@
         margin-bottom: 0;
         padding: 10px 15px;
       }
-      .navbar-nav{
-        background-color: $white;
-        clear: none;
-        float: left;
-        padding-left: 0;
-            margin-top: 0;
-      }
+      
       .navbar-nav > li > a {
         padding-left: 10px;
         padding-right: 10px;

@@ -86,14 +86,6 @@
 		color: $white;
 	}
 }
-.navbar-main{
-	.btn-orange-cta{
-		&:hover{
-			background-color: $color_1;
-			color: $white;
-		}
-	}
-}
 .btn-primary {
     background-color: $color_1;
     @extend .btn;
@@ -2696,4 +2688,20 @@
 	
 	@include clearfix();
 	
+}
+
+.rs-accordion{
+	.card{
+		.card-header{
+			color: $color_2;
+			padding-top: 0;
+			padding-bottom: 0;
+			&:first-child{
+				border-radius: 0;
+			}
+		}
+		.btn{
+			color: $color_2;
+		}
+	}
 }
