@@ -3419,14 +3419,48 @@ Back To Top Section
     content: "";
     clear: both; }
 
-.rs-accordion .card .card-header {
-  color: #333333;
-  padding-top: 0;
-  padding-bottom: 0; }
-  .rs-accordion .card .card-header:first-child {
-    border-radius: 0; }
-.rs-accordion .card .btn, .rs-accordion .card .btn-primary, .rs-accordion .card .btn-secondary, .rs-accordion .card .btn-light, .rs-accordion .card .btn-grey, .rs-accordion .card .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .rs-accordion .card a, .rs-accordion .card .btn-ghost-light, .rs-accordion .card .btn-ghost-dark {
-  color: #333333; }
+.rs-accordion .card {
+  /*margin-top: 10px;*/
+  border-color: transparent; }
+  .rs-accordion .card .card-header {
+    color: #333333;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: transparent; }
+    .rs-accordion .card .card-header:first-child {
+      border-radius: 0; }
+  .rs-accordion .card .btn, .rs-accordion .card .btn-primary, .rs-accordion .card .btn-secondary, .rs-accordion .card .btn-light, .rs-accordion .card .btn-grey, .rs-accordion .card .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .rs-accordion .card a, .rs-accordion .card .btn-ghost-light, .rs-accordion .card .btn-ghost-dark {
+    color: #333333;
+    padding: 13px 20px; }
+  .rs-accordion .card:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .rs-accordion .card:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+.rs-accordion .title {
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+  .rs-accordion .title .btn, .rs-accordion .title .btn-primary, .rs-accordion .title .btn-secondary, .rs-accordion .title .btn-light, .rs-accordion .title .btn-grey, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a, .rs-accordion .title .btn-ghost-light, .rs-accordion .title .btn-ghost-dark {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    padding: 13px 35px;
+    position: relative; }
+    .rs-accordion .title .btn:hover, .rs-accordion .title .btn-primary:hover, .rs-accordion .title .btn-secondary:hover, .rs-accordion .title .btn-light:hover, .rs-accordion .title .btn-grey:hover, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a:hover, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a:hover, .rs-accordion .title .btn-ghost-light:hover, .rs-accordion .title .btn-ghost-dark:hover, .rs-accordion .title .btn:active, .rs-accordion .title .btn-primary:active, .rs-accordion .title .btn-secondary:active, .rs-accordion .title .btn-light:active, .rs-accordion .title .btn-grey:active, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a:active, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a:active, .rs-accordion .title .btn-ghost-light:active, .rs-accordion .title .btn-ghost-dark:active {
+      text-decoration: none; }
+    .rs-accordion .title .btn:before, .rs-accordion .title .btn-primary:before, .rs-accordion .title .btn-secondary:before, .rs-accordion .title .btn-light:before, .rs-accordion .title .btn-grey:before, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a:before, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a:before, .rs-accordion .title .btn-ghost-light:before, .rs-accordion .title .btn-ghost-dark:before {
+      content: "\29BE";
+      font-family: Arial;
+      color: #FF7000;
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      line-height: 1;
+      padding: 0 0px 0 20px; }
+    .rs-accordion .title .btn.collapsed:before, .rs-accordion .title .collapsed.btn-primary:before, .rs-accordion .title .collapsed.btn-secondary:before, .rs-accordion .title .collapsed.btn-light:before, .rs-accordion .title .collapsed.btn-grey:before, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a.collapsed:before, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a.collapsed:before, .rs-accordion .title .collapsed.btn-ghost-light:before, .rs-accordion .title .collapsed.btn-ghost-dark:before {
+      content: "\29BF"; }
 
 /**
  * 4. - LOGO & NAVIGATION
