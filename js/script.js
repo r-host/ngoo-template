@@ -158,15 +158,13 @@ $(document).ready(function(){
 	});
 	
 	/* =================================
-	FAQ
+	NAVBAR HOVER
 	=================================== */	
-	$(".panel").on("show.bs.collapse hide.bs.collapse", function(e) {
-	    if (e.type=='show'){
-	      $(this).addClass('active');
-	    }else{
-	      $(this).removeClass('active');
-	    }
-  	}); 
+	$('.navbar-main .nav-item').hover(function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+    });
 	
 	/* =================================
 	MAGNIFIC POPUP

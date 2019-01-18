@@ -206,11 +206,19 @@
       /*left: 40px;*/
       top: -75px;
     }
+    .navbar-light .navbar-nav .active>.nav-link{
+
+    }
     .navbar-nav{
       .nav-link {
         color: $white;
 
         &:hover, &:focus{
+          color: $color_1;
+        }
+      }
+      .active{
+        >.nav-link{
           color: $color_1;
         }
       } 

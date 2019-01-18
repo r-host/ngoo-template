@@ -164,13 +164,20 @@
     	border-color: transparent;
 	}
 }
+.page-item{
+	&.active {
+		.page-link {
+		  z-index: 1;
+		  color: #fff;
+		  background-color: $color_1;
+		  border-color: $color_1;
+		}
+	}
+}
 .pagination{
-	clear: both;
-	text-align: left;
-	margin-top: 20px;
-	> li{
-		@include border-radius(0px);
-		> a{
+	margin-left: 0;
+	.page-item{
+		.page-link{
 			@include border-radius(0px);
 			padding: 15px 20px;
 			margin-right: 5px;
@@ -186,29 +193,18 @@
 				background: $color_1;
 			}
 		}
-		&:first-child > a, &:first-child > span {
-		  	@include border-radius(0px);
-		}
-		&:last-child > a, &:last-child > span {
-		    @include border-radius(0px);
+		&:first-child, &:last-child{
+			.page-link{
+				border-radius: 0;
+				
+			}
 		}
 		&.active{
-			> a{
+			.page-link{
 				color: $white;
 				background: $color_1;
 			}
 		}
-	}
-	> .active{
-		> a{
-			background: $color_1;
-			color: $font__body-color;
-		}
-	}
-	> .active > a, > .active > span, > .active > a:hover, > .active > span:hover, > .active > a:focus, > .active > span:focus{
-		background: $color_1;
-		color: $font__body-color;
-
 	}
 }
 
@@ -1186,7 +1182,7 @@
 	}
 	&:hover{
 		.media{
-			background-color: rgba($color_1, .8);
+			background-color: rgba($color_2, .3);
 			img{
 				filter: alpha(opacity=30);
 				opacity: .3;
@@ -2137,7 +2133,7 @@
 		.image{
 			position: relative;
 			overflow: hidden;
-			background-color: $color_1;
+			background-color: $color_2;
 			/*@include border-radius(20px);*/
 			&:before{
 				content: "\f0c1";
@@ -2235,11 +2231,12 @@
 		   	margin-top: 20px;
 		   	margin-bottom: 10px;
 		   	font-weight: 700;
+	   		color: $color_2;
 		   	a{
-		   		color: $color_1;
+		   		color: $color_2;
 
 			   	&:hover{
-					color: $color_3;
+					color: $color_1;
 			   	}
 		   	}
 		}

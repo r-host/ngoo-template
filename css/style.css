@@ -1237,7 +1237,7 @@ Back To Top Section
 :focus {
   outline: none; }
 
-.btn, .btn-primary, .btn-secondary, .btn-light, .btn-grey, .rs-nav-tabs .nav-tabs > li a, .btn-ghost-light, .btn-ghost-dark {
+.btn, .btn-primary, .btn-secondary, .btn-light, .btn-grey, .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills li a, .btn-ghost-light, .btn-ghost-dark {
   font-size: 14px;
   color: #ffffff;
   padding: 13px 40px;
@@ -1311,11 +1311,11 @@ Back To Top Section
     color: #ffffff;
     border-color: transparent; }
 
-.btn-grey, .rs-nav-tabs .nav-tabs > li a {
+.btn-grey, .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills li a {
   background-color: #F8F8F8;
   color: #333333;
   border: 1px solid #F8F8F8; }
-  .btn-grey:hover, .rs-nav-tabs .nav-tabs > li a:hover {
+  .btn-grey:hover, .rs-nav-tabs .nav-pills .nav-link:hover, .rs-nav-tabs .nav-pills li a:hover {
     background-color: #333333;
     color: #ffffff;
     border-color: transparent; }
@@ -1338,50 +1338,35 @@ Back To Top Section
     color: #ffffff;
     border-color: transparent; }
 
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #FF7000;
+  border-color: #FF7000; }
+
 .pagination {
-  clear: both;
-  text-align: left;
-  margin-top: 20px; }
-  .pagination > li {
+  margin-left: 0; }
+  .pagination .page-item .page-link {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
-    border-radius: 0px; }
-    .pagination > li > a {
-      -webkit-border-radius: 0px;
-      -moz-border-radius: 0px;
-      -ms-border-radius: 0px;
-      border-radius: 0px;
-      padding: 15px 20px;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      color: #999999;
-      display: inline-block;
-      border-color: transparent;
-      background: #eee;
-      border: 0; }
-      .pagination > li > a:hover, .pagination > li > a.active {
-        color: #ffffff;
-        background: #FF7000; }
-    .pagination > li:first-child > a, .pagination > li:first-child > span {
-      -webkit-border-radius: 0px;
-      -moz-border-radius: 0px;
-      -ms-border-radius: 0px;
-      border-radius: 0px; }
-    .pagination > li:last-child > a, .pagination > li:last-child > span {
-      -webkit-border-radius: 0px;
-      -moz-border-radius: 0px;
-      -ms-border-radius: 0px;
-      border-radius: 0px; }
-    .pagination > li.active > a {
+    border-radius: 0px;
+    padding: 15px 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #999999;
+    display: inline-block;
+    border-color: transparent;
+    background: #eee;
+    border: 0; }
+    .pagination .page-item .page-link:hover, .pagination .page-item .page-link.active {
       color: #ffffff;
       background: #FF7000; }
-  .pagination > .active > a {
-    background: #FF7000;
-    color: #999999; }
-  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background: #FF7000;
-    color: #999999; }
+  .pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+    border-radius: 0; }
+  .pagination .page-item.active .page-link {
+    color: #ffffff;
+    background: #FF7000; }
 
 .btn-sidebar {
   border-radius: 0;
@@ -2192,7 +2177,7 @@ Back To Top Section
     color: #FF7000;
     font-size: 18px; }
   .testimonial-1:hover .media {
-    background-color: rgba(255, 112, 0, 0.8); }
+    background-color: rgba(51, 51, 51, 0.3); }
     .testimonial-1:hover .media img {
       filter: alpha(opacity=30);
       opacity: .3;
@@ -2982,7 +2967,7 @@ Back To Top Section
     .list-news .news-item .image {
       position: relative;
       overflow: hidden;
-      background-color: #FF7000;
+      background-color: #333333;
       /*@include border-radius(20px);*/ }
       .list-news .news-item .image:before {
         content: "\f0c1";
@@ -3052,11 +3037,12 @@ Back To Top Section
       margin-top: 5px;
       margin-top: 20px;
       margin-bottom: 10px;
-      font-weight: 700; }
+      font-weight: 700;
+      color: #333333; }
       .list-news .news-item .blok-title a {
-        color: #FF7000; }
+        color: #333333; }
         .list-news .news-item .blok-title a:hover {
-          color: #000000; }
+          color: #FF7000; }
 
 @media (max-width: 1024px) {
   .list-news {
@@ -3429,7 +3415,7 @@ Back To Top Section
     border-color: transparent; }
     .rs-accordion .card .card-header:first-child {
       border-radius: 0; }
-  .rs-accordion .card .btn, .rs-accordion .card .btn-primary, .rs-accordion .card .btn-secondary, .rs-accordion .card .btn-light, .rs-accordion .card .btn-grey, .rs-accordion .card .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .rs-accordion .card a, .rs-accordion .card .btn-ghost-light, .rs-accordion .card .btn-ghost-dark {
+  .rs-accordion .card .btn, .rs-accordion .card .btn-primary, .rs-accordion .card .btn-secondary, .rs-accordion .card .btn-light, .rs-accordion .card .btn-grey, .rs-accordion .card .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills .rs-accordion .card .nav-link, .rs-accordion .card .rs-nav-tabs .nav-pills li a, .rs-nav-tabs .nav-pills li .rs-accordion .card a, .rs-accordion .card .btn-ghost-light, .rs-accordion .card .btn-ghost-dark {
     color: #333333;
     padding: 13px 20px; }
   .rs-accordion .card:first-of-type {
@@ -3442,14 +3428,14 @@ Back To Top Section
   font-size: 16px;
   margin: 0;
   padding: 0; }
-  .rs-accordion .title .btn, .rs-accordion .title .btn-primary, .rs-accordion .title .btn-secondary, .rs-accordion .title .btn-light, .rs-accordion .title .btn-grey, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a, .rs-accordion .title .btn-ghost-light, .rs-accordion .title .btn-ghost-dark {
+  .rs-accordion .title .btn, .rs-accordion .title .btn-primary, .rs-accordion .title .btn-secondary, .rs-accordion .title .btn-light, .rs-accordion .title .btn-grey, .rs-accordion .title .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills .rs-accordion .title .nav-link, .rs-accordion .title .rs-nav-tabs .nav-pills li a, .rs-nav-tabs .nav-pills li .rs-accordion .title a, .rs-accordion .title .btn-ghost-light, .rs-accordion .title .btn-ghost-dark {
     font-family: "Lora", serif;
     font-weight: 700;
     padding: 13px 35px;
     position: relative; }
-    .rs-accordion .title .btn:hover, .rs-accordion .title .btn-primary:hover, .rs-accordion .title .btn-secondary:hover, .rs-accordion .title .btn-light:hover, .rs-accordion .title .btn-grey:hover, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a:hover, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a:hover, .rs-accordion .title .btn-ghost-light:hover, .rs-accordion .title .btn-ghost-dark:hover, .rs-accordion .title .btn:active, .rs-accordion .title .btn-primary:active, .rs-accordion .title .btn-secondary:active, .rs-accordion .title .btn-light:active, .rs-accordion .title .btn-grey:active, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a:active, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a:active, .rs-accordion .title .btn-ghost-light:active, .rs-accordion .title .btn-ghost-dark:active {
+    .rs-accordion .title .btn:hover, .rs-accordion .title .btn-primary:hover, .rs-accordion .title .btn-secondary:hover, .rs-accordion .title .btn-light:hover, .rs-accordion .title .btn-grey:hover, .rs-accordion .title .rs-nav-tabs .nav-pills .nav-link:hover, .rs-nav-tabs .nav-pills .rs-accordion .title .nav-link:hover, .rs-accordion .title .rs-nav-tabs .nav-pills li a:hover, .rs-nav-tabs .nav-pills li .rs-accordion .title a:hover, .rs-accordion .title .btn-ghost-light:hover, .rs-accordion .title .btn-ghost-dark:hover, .rs-accordion .title .btn:active, .rs-accordion .title .btn-primary:active, .rs-accordion .title .btn-secondary:active, .rs-accordion .title .btn-light:active, .rs-accordion .title .btn-grey:active, .rs-accordion .title .rs-nav-tabs .nav-pills .nav-link:active, .rs-nav-tabs .nav-pills .rs-accordion .title .nav-link:active, .rs-accordion .title .rs-nav-tabs .nav-pills li a:active, .rs-nav-tabs .nav-pills li .rs-accordion .title a:active, .rs-accordion .title .btn-ghost-light:active, .rs-accordion .title .btn-ghost-dark:active {
       text-decoration: none; }
-    .rs-accordion .title .btn:before, .rs-accordion .title .btn-primary:before, .rs-accordion .title .btn-secondary:before, .rs-accordion .title .btn-light:before, .rs-accordion .title .btn-grey:before, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a:before, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a:before, .rs-accordion .title .btn-ghost-light:before, .rs-accordion .title .btn-ghost-dark:before {
+    .rs-accordion .title .btn:before, .rs-accordion .title .btn-primary:before, .rs-accordion .title .btn-secondary:before, .rs-accordion .title .btn-light:before, .rs-accordion .title .btn-grey:before, .rs-accordion .title .rs-nav-tabs .nav-pills .nav-link:before, .rs-nav-tabs .nav-pills .rs-accordion .title .nav-link:before, .rs-accordion .title .rs-nav-tabs .nav-pills li a:before, .rs-nav-tabs .nav-pills li .rs-accordion .title a:before, .rs-accordion .title .btn-ghost-light:before, .rs-accordion .title .btn-ghost-dark:before {
       content: "\29BE";
       font-family: Arial;
       color: #FF7000;
@@ -3459,7 +3445,7 @@ Back To Top Section
       left: -20px;
       line-height: 1;
       padding: 0 0px 0 20px; }
-    .rs-accordion .title .btn.collapsed:before, .rs-accordion .title .collapsed.btn-primary:before, .rs-accordion .title .collapsed.btn-secondary:before, .rs-accordion .title .collapsed.btn-light:before, .rs-accordion .title .collapsed.btn-grey:before, .rs-accordion .title .rs-nav-tabs .nav-tabs > li a.collapsed:before, .rs-nav-tabs .nav-tabs > li .rs-accordion .title a.collapsed:before, .rs-accordion .title .collapsed.btn-ghost-light:before, .rs-accordion .title .collapsed.btn-ghost-dark:before {
+    .rs-accordion .title .btn.collapsed:before, .rs-accordion .title .collapsed.btn-primary:before, .rs-accordion .title .collapsed.btn-secondary:before, .rs-accordion .title .collapsed.btn-light:before, .rs-accordion .title .collapsed.btn-grey:before, .rs-accordion .title .rs-nav-tabs .nav-pills .collapsed.nav-link:before, .rs-nav-tabs .nav-pills .rs-accordion .title .collapsed.nav-link:before, .rs-accordion .title .rs-nav-tabs .nav-pills li a.collapsed:before, .rs-nav-tabs .nav-pills li .rs-accordion .title a.collapsed:before, .rs-accordion .title .collapsed.btn-ghost-light:before, .rs-accordion .title .collapsed.btn-ghost-dark:before {
       content: "\29BF"; }
 
 /**
@@ -3622,6 +3608,8 @@ Back To Top Section
       color: #ffffff; }
       .header-1 .navbar-main .navbar-nav .nav-link:hover, .header-1 .navbar-main .navbar-nav .nav-link:focus {
         color: #FF7000; }
+    .header-1 .navbar-main .navbar-nav .active > .nav-link {
+      color: #FF7000; }
     .header-1 .navbar-main.stiky {
       height: auto;
       background-color: #ffffff;
@@ -3884,7 +3872,7 @@ Back To Top Section
   .wrap-caption .excerpt {
     margin-bottom: 50px;
     font-size: 18px; }
-  .wrap-caption .btn, .wrap-caption .btn-primary, .wrap-caption .btn-secondary, .wrap-caption .btn-light, .wrap-caption .btn-grey, .wrap-caption .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .wrap-caption a, .wrap-caption .btn-ghost-light, .wrap-caption .btn-ghost-dark {
+  .wrap-caption .btn, .wrap-caption .btn-primary, .wrap-caption .btn-secondary, .wrap-caption .btn-light, .wrap-caption .btn-grey, .wrap-caption .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills .wrap-caption .nav-link, .wrap-caption .rs-nav-tabs .nav-pills li a, .rs-nav-tabs .nav-pills li .wrap-caption a, .wrap-caption .btn-ghost-light, .wrap-caption .btn-ghost-dark {
     margin-right: 15px; }
 
 /**
@@ -4250,7 +4238,8 @@ dl.hiw {
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #333333; }
 
 .author-box {
   background-color: #f6f6f6;
@@ -4290,15 +4279,6 @@ dl.hiw {
     border-bottom: 1px solid #E9E9E9;
     background-color: #fff;
     margin-bottom: 30px; }
-    .comments-box .media .media-left {
-      display: inline-table;
-      float: left;
-      padding-right: 20px; }
-      .comments-box .media .media-left img {
-        width: 60px;
-        height: 60px; }
-    .comments-box .media .media-body {
-      margin-left: 140px; }
     .comments-box .media.comment {
       background-color: #fff; }
     .comments-box .media.reply-comment {
@@ -4344,14 +4324,16 @@ dl.hiw {
 .form-comment textarea.form-control,
 .form-contact textarea.form-control {
   height: auto; }
-.form-comment .btn.disabled, .form-comment .disabled.btn-primary, .form-comment .disabled.btn-secondary, .form-comment .disabled.btn-light, .form-comment .disabled.btn-grey, .form-comment .rs-nav-tabs .nav-tabs > li a.disabled, .rs-nav-tabs .nav-tabs > li .form-comment a.disabled, .form-comment .disabled.btn-ghost-light, .form-comment .disabled.btn-ghost-dark, .form-comment .btn[disabled], .form-comment [disabled].btn-primary, .form-comment [disabled].btn-secondary, .form-comment [disabled].btn-light, .form-comment [disabled].btn-grey, .form-comment .rs-nav-tabs .nav-tabs > li a[disabled], .rs-nav-tabs .nav-tabs > li .form-comment a[disabled], .form-comment [disabled].btn-ghost-light, .form-comment [disabled].btn-ghost-dark, .form-comment fieldset[disabled] .btn, .form-comment fieldset[disabled] .btn-primary, .form-comment fieldset[disabled] .btn-secondary, .form-comment fieldset[disabled] .btn-light, .form-comment fieldset[disabled] .btn-grey, .form-comment fieldset[disabled] .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .form-comment fieldset[disabled] a, .form-comment fieldset[disabled] .btn-ghost-light, .form-comment fieldset[disabled] .btn-ghost-dark,
+.form-comment .btn.disabled, .form-comment .disabled.btn-primary, .form-comment .disabled.btn-secondary, .form-comment .disabled.btn-light, .form-comment .disabled.btn-grey, .form-comment .rs-nav-tabs .nav-pills .disabled.nav-link, .rs-nav-tabs .nav-pills .form-comment .disabled.nav-link, .form-comment .rs-nav-tabs .nav-pills li a.disabled, .rs-nav-tabs .nav-pills li .form-comment a.disabled, .form-comment .disabled.btn-ghost-light, .form-comment .disabled.btn-ghost-dark, .form-comment .btn[disabled], .form-comment [disabled].btn-primary, .form-comment [disabled].btn-secondary, .form-comment [disabled].btn-light, .form-comment [disabled].btn-grey, .form-comment .rs-nav-tabs .nav-pills [disabled].nav-link, .rs-nav-tabs .nav-pills .form-comment [disabled].nav-link, .form-comment .rs-nav-tabs .nav-pills li a[disabled], .rs-nav-tabs .nav-pills li .form-comment a[disabled], .form-comment [disabled].btn-ghost-light, .form-comment [disabled].btn-ghost-dark, .form-comment fieldset[disabled] .btn, .form-comment fieldset[disabled] .btn-primary, .form-comment fieldset[disabled] .btn-secondary, .form-comment fieldset[disabled] .btn-light, .form-comment fieldset[disabled] .btn-grey, .form-comment fieldset[disabled] .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills .form-comment fieldset[disabled] .nav-link, .form-comment fieldset[disabled] .rs-nav-tabs .nav-pills li a, .rs-nav-tabs .nav-pills li .form-comment fieldset[disabled] a, .form-comment fieldset[disabled] .btn-ghost-light, .form-comment fieldset[disabled] .btn-ghost-dark,
 .form-contact .btn.disabled,
 .form-contact .disabled.btn-primary,
 .form-contact .disabled.btn-secondary,
 .form-contact .disabled.btn-light,
 .form-contact .disabled.btn-grey,
-.form-contact .rs-nav-tabs .nav-tabs > li a.disabled,
-.rs-nav-tabs .nav-tabs > li .form-contact a.disabled,
+.form-contact .rs-nav-tabs .nav-pills .disabled.nav-link,
+.rs-nav-tabs .nav-pills .form-contact .disabled.nav-link,
+.form-contact .rs-nav-tabs .nav-pills li a.disabled,
+.rs-nav-tabs .nav-pills li .form-contact a.disabled,
 .form-contact .disabled.btn-ghost-light,
 .form-contact .disabled.btn-ghost-dark,
 .form-contact .btn[disabled],
@@ -4359,8 +4341,10 @@ dl.hiw {
 .form-contact [disabled].btn-secondary,
 .form-contact [disabled].btn-light,
 .form-contact [disabled].btn-grey,
-.form-contact .rs-nav-tabs .nav-tabs > li a[disabled],
-.rs-nav-tabs .nav-tabs > li .form-contact a[disabled],
+.form-contact .rs-nav-tabs .nav-pills [disabled].nav-link,
+.rs-nav-tabs .nav-pills .form-contact [disabled].nav-link,
+.form-contact .rs-nav-tabs .nav-pills li a[disabled],
+.rs-nav-tabs .nav-pills li .form-contact a[disabled],
 .form-contact [disabled].btn-ghost-light,
 .form-contact [disabled].btn-ghost-dark,
 .form-contact fieldset[disabled] .btn,
@@ -4368,8 +4352,10 @@ dl.hiw {
 .form-contact fieldset[disabled] .btn-secondary,
 .form-contact fieldset[disabled] .btn-light,
 .form-contact fieldset[disabled] .btn-grey,
-.form-contact fieldset[disabled] .rs-nav-tabs .nav-tabs > li a,
-.rs-nav-tabs .nav-tabs > li .form-contact fieldset[disabled] a,
+.form-contact fieldset[disabled] .rs-nav-tabs .nav-pills .nav-link,
+.rs-nav-tabs .nav-pills .form-contact fieldset[disabled] .nav-link,
+.form-contact fieldset[disabled] .rs-nav-tabs .nav-pills li a,
+.rs-nav-tabs .nav-pills li .form-contact fieldset[disabled] a,
 .form-contact fieldset[disabled] .btn-ghost-light,
 .form-contact fieldset[disabled] .btn-ghost-dark {
   opacity: 1; }
@@ -4508,7 +4494,7 @@ dl.hiw {
       float: none;
       margin: 0 auto;
       display: table; } }
-  .cta-1 .body-action .btn, .cta-1 .body-action .btn-primary, .cta-1 .body-action .btn-secondary, .cta-1 .body-action .btn-light, .cta-1 .body-action .btn-grey, .cta-1 .body-action .rs-nav-tabs .nav-tabs > li a, .rs-nav-tabs .nav-tabs > li .cta-1 .body-action a, .cta-1 .body-action .btn-ghost-light, .cta-1 .body-action .btn-ghost-dark {
+  .cta-1 .body-action .btn, .cta-1 .body-action .btn-primary, .cta-1 .body-action .btn-secondary, .cta-1 .body-action .btn-light, .cta-1 .body-action .btn-grey, .cta-1 .body-action .rs-nav-tabs .nav-pills .nav-link, .rs-nav-tabs .nav-pills .cta-1 .body-action .nav-link, .cta-1 .body-action .rs-nav-tabs .nav-pills li a, .rs-nav-tabs .nav-pills li .cta-1 .body-action a, .cta-1 .body-action .btn-ghost-light, .cta-1 .body-action .btn-ghost-dark {
     display: inline-block;
     overflow: hidden;
     backface-visibility: hidden;
@@ -4680,21 +4666,21 @@ dl.hiw {
     .events-widget .widget-title:first-child {
       margin-top: -10px; }
 
-.rs-nav-tabs {
-  text-align: center; }
-  .rs-nav-tabs .nav-tabs {
-    border-bottom: 0;
-    margin-bottom: 30px; }
-    .rs-nav-tabs .nav-tabs > li {
-      float: none;
-      display: inline-block; }
-      .rs-nav-tabs .nav-tabs > li a {
-        border-color: transparent;
-        border-radius: 4px; }
-      .rs-nav-tabs .nav-tabs > li.active a {
-        background-color: #333333;
-        color: #ffffff;
-        border-color: transparent; }
+.rs-nav-tabs .nav-pills .nav-link {
+  border-color: transparent;
+  border-radius: 4px;
+  margin: 0 3px; }
+  .rs-nav-tabs .nav-pills .nav-link.active {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: transparent; }
+.rs-nav-tabs .nav-pills li a {
+  border-color: transparent;
+  border-radius: 4px; }
+.rs-nav-tabs .nav-pills li.active a {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: transparent; }
 
 .meta {
   margin-bottom: 20px;
