@@ -22,6 +22,15 @@ $(document).ready(function(){
     	e.css({'width': t + '%'});
     });
 
+	/* =================================
+	NAVBAR HOVER
+	=================================== */	
+	// $('.navbar-main .nav-item').hover(function () {
+ //        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+ //    }, function () {
+ //        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+ //    });
+
 	
 	/* =================================
 	NAVBAR 
@@ -157,14 +166,6 @@ $(document).ready(function(){
 		loop: true
 	});
 	
-	/* =================================
-	NAVBAR HOVER
-	=================================== */	
-	$('.navbar-main .nav-item').hover(function () {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-    }, function () {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-    });
 	
 	/* =================================
 	MAGNIFIC POPUP
