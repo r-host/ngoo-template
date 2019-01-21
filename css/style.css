@@ -1632,9 +1632,9 @@ Back To Top Section
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-box-shadow: 4px 5px 0 transparent;
-  -moz-box-shadow: 4px 5px 0 transparent;
-  box-shadow: 4px 5px 0 transparent;
+  -webkit-box-shadow: 4px 5px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 4px 5px 0 rgba(0, 0, 0, 0);
+  box-shadow: 4px 5px 0 rgba(0, 0, 0, 0);
   margin-bottom: 30px; }
   .box-fundraising .media {
     width: 100%;
@@ -3574,6 +3574,8 @@ Back To Top Section
   .navbar-main .dropdown-toggle::after {
     margin-left: 0.6em;
     color: #FF7000; }
+  .navbar-main .dropdown:hover > .dropdown-menu {
+    display: block; }
   .navbar-main .dropdown-menu {
     min-width: 200px;
     -webkit-border-radius: 0;

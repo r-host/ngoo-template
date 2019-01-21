@@ -170,6 +170,9 @@
       color: $color_1;
     }
   }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
   .dropdown-menu {
     min-width: 200px;
     @include border-radius(0);
