@@ -22,15 +22,6 @@ $(document).ready(function(){
     	e.css({'width': t + '%'});
     });
 
-	/* =================================
-	NAVBAR HOVER
-	=================================== */	
-	// $('.navbar-main .nav-item').hover(function () {
- //        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
- //    }, function () {
- //        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
- //    });
-
 	
 	/* =================================
 	NAVBAR 
@@ -66,7 +57,17 @@ $(document).ready(function(){
 	/* =================================
 	BANNER ROTATOR IMAGE 
 	=================================== */
-	var slides = $("#oc-fullslider");
+	var slides = $("#oc-fullslider"),
+        b = slides.find('.owl-slide');
+        b.each(function(){
+            var e = $(this),
+            ocImg = e.find('img').attr('src');
+            e.css({'background-image': 'url(' + ocImg + ')'});
+
+            console.log('tes ' + ocImg); 
+        });
+
+
     slides.owlCarousel({
         items: 1,
         autoplay: true,

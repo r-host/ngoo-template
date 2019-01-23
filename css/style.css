@@ -3456,8 +3456,7 @@ Back To Top Section
 .topbar {
   background-color: #FF7000;
   color: #ffffff;
-  height: 40px;
-  padding-top: 6px; }
+  height: 40px; }
   .topbar .info {
     margin-top: 3px;
     color: #ffffff; }
@@ -3805,6 +3804,17 @@ Back To Top Section
 .banner {
   float: left;
   padding: 0 0; }
+  .banner.owl-carousel {
+    position: relative;
+    height: 100%; }
+    .banner.owl-carousel div:not(.owl-controls) {
+      height: 100%; }
+    .banner.owl-carousel .owl-item img {
+      display: none; }
+    .banner.owl-carousel .owl-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
   .banner .item {
     position: relative; }
   .banner .slider-pos {

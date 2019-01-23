@@ -87,6 +87,21 @@
 .banner{
   float: left;
   padding: 0 0;
+  &.owl-carousel{
+    position: relative;
+    height: 100%;
+    div:not(.owl-controls) {
+      height: 100%;
+    }
+    .owl-item img{
+      display: none;
+    }
+    .owl-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
   .item{
     position: relative;
   }
