@@ -82,6 +82,15 @@ $(document).ready(function(){
 		dots: false,
     }); 
 
+    slides.on('translate.owl.carousel',function(e){
+	    $('.owl-item video').each(function(){
+	      $(this).get(0).pause();
+	    });
+  	});
+  	slides.on('translated.owl.carousel',function(e){
+	    $('.owl-item.active video').get(0).play();
+  	})
+
 	/* =================================
 	BACK TO TOP 
 	=================================== */
