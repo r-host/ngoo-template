@@ -93,6 +93,10 @@
     div:not(.owl-controls) {
       height: 100%;
     }
+    .owl-controls .owl-nav,
+    .owl-controls .owl-dots{
+      height: auto;
+    }
     .owl-item img{
       display: none;
     }

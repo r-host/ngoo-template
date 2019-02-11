@@ -3810,6 +3810,9 @@ Back To Top Section
     height: 100%; }
     .banner.owl-carousel div:not(.owl-controls) {
       height: 100%; }
+    .banner.owl-carousel .owl-controls .owl-nav,
+    .banner.owl-carousel .owl-controls .owl-dots {
+      height: auto; }
     .banner.owl-carousel .owl-item img {
       display: none; }
     .banner.owl-carousel .owl-slide {
